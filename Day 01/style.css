@@ -1,0 +1,65 @@
+/* Element selector  */
+/* div{
+    property :value  */
+    /* background-color: red;
+} */
+
+/* Class selector  */
+.red{
+    background-color: red;
+}
+
+/* Id selector  */
+#green{
+    background-color: green;
+}
+
+/* If there is direct child inside div element  */
+div > p{
+    background-color: brown;
+}
+
+/* Descendent selector  */
+div p{
+    color: rgb(35, 184, 184);
+}
+
+/* Universal selector  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Pseudo selector  */
+a:visited{
+    color: red;
+}
+a:link{
+    color: green;
+}
+a:active{
+    background-color: pink;
+}
+a:hover{
+    background-color: chartreuse;
+}
+
+p:first-child{
+    color: chartreuse;
+}
+
+/* When you focus with your tab key on this button  */
+button:focus {
+    outline: none;
+}
+button:focus-visible {
+    outline: 1px solid rgb(64, 0, 241);
+}
+
+/* Invalid and invalid pseudo on taking input  */
+#takeEmail:invalid{
+    border: 2px solid red;
+}
+#takeEmail:valid{
+    border: 2px solid green;
+}

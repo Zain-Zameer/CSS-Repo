@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box2{
+            color: yellow;
+            border: 2px solid rgb(185, 7, 255);
+            margin: 25px;
+            padding: 10px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        /* In margin collapse the maximum margin applies  */
+        .box1{
+            border: 2px solid black;
+            margin: 25px;
+            padding: 10px;
+            color: red;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        Hello world
+    </div>
+
+    <div class="box box2">
+        hello another world
+    </div>
+</body>
+</html>
