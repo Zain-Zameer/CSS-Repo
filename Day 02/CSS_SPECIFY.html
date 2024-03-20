@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specify</title>
+    <style>
+        /* browsers style sheet also known as browser agent style sheet  */
+        /* To calculate specificity, assign a value to each part of the selector:
+            Universal Selector: 0
+            Element selectors and pseudo-elements: 1
+            Class selectors, attribute selectors, and pseudo-classes: 10
+            ID selectors: 100
+            Inline styles: 1000 
+        */
+        .yellow{
+            color:yellow;
+        }
+        
+        .cpurple{
+            color: aqua;
+        }
+        h2{
+            color: red;
+        }   
+        .cred{
+            color: purple !important;
+        }
+
+        /* Example of attribute selector  */
+        [data-x=hola]{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="yellow cred cpurple" data-x="hola" style="color:red;">CSS SPECIFY</h2>
+    </div>
+</body>
+</html>
