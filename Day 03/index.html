@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units in HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            border: 2px solid black;
+            /* width: 1596px;  this is not responsive unit*/
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid black;
+            /* width: 1596px;  this is not responsive unit*/
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+
+        .container p{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is box
+    </div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi hic consequatur a maxime temporibus, ut nisi perferendis recusandae deleniti doloremque obcaecati veniam sequi nostrum repellendus amet eos voluptatum autem tenetur laudantium explicabo atque tempore eveniet? Sit cumque, magni aut odit aliquid accusamus harum sunt reprehenderit.
+        </p>
+        
+    </div>
+</body>
+</html>
