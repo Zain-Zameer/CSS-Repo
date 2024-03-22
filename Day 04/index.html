@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units in CSS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+        }
+        .box{
+
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1600px; */
+            width: 80vw;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1600px; */
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Sizing Units in css</h2>
+        <ul>
+            <li>px - Simple pixels</li>
+            <li>vh & vw - responsive viewport</li>
+            <li>vmax & vmin</li>
+            <li>rem & em</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum corrupti impedit rem quasi libero cupiditate dolore, iure perferendis natus provident nemo harum, quibusdam itaque ut error iusto. Voluptas, ab! Quia magnam iste omnis, ad asperiores rerum eligendi quam odio neque eum quisquam fugiat esse distinctio, rem optio inventore nisi vero reprehenderit minima iure exercitationem deserunt fugit.
+    </div>
+</body>
+</html>
