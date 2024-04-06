@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            padding: 45px;
+            width: 344px;
+            border: 2px solid black;
+            display: inline-block; /*Cant apply width or padding or margin properly if your display is just inline, you have to add inline-block*/
+            margin: 34px;
+            /* display: none;    */
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden   ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am box
+    </div>
+
+    <div class="box">
+        I am box 2
+    </div>
+
+    <span> I am a good</span>
+    <span>I am a boy</span>
+</body>
+</html>
